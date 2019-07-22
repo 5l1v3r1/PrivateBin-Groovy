@@ -1,6 +1,12 @@
 /*
 Usage: Execute groovy script however you can.
+PrivateBin home: https://privatebin.info/
 Encryption details: https://github.com/PrivateBin/PrivateBin/wiki/Encryption-format
+Configuration details: https://github.com/PrivateBin/PrivateBin/wiki/Configuration
+Test passed on PrivateBin version 1.3
+Test servers:   https://privatebin.net  (v1.3 PASS)
+                https://cpaste.org      (v1.3 PASS)
+                https://paste.i2pd.xyz  (v1.1.1 FAIL)
  */
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
@@ -152,4 +158,3 @@ if (responseCode == 200){
         println(responseJSON["message"])
     }
 }
-pasteRequest.disconnect()
